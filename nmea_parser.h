@@ -33,7 +33,7 @@ nmea_message* create_nmea_message();
 
 /// Function to destroy user message
 
-void nmea_destroy_message(nmea_message** message);
+int nmea_destroy_message(nmea_message** message);
 
 /// Function to add value to user message
 
