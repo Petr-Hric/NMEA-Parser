@@ -26,15 +26,13 @@ int main() {
         char* test_str;
         nmea_message_to_string(message, &test_str);
 
-        printf("%s\n\n", test_str);
+        printf("%s\n", test_str);
 
         nmea_destroy_message_string(&test_str);
 
         nmea_destroy_message(&message);
 
         lastMessageEndIndex += messageEndIndex;
-
-        fputc('\n', stdout);
     }
     return -1;
 }
