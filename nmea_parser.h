@@ -29,7 +29,7 @@ int nmea_parse_message(const char* str // Input string
 
 /// Function to create user message
 
-nmea_message* create_nmea_message();
+nmea_message* nmea_init_message();
 
 /// Function to destroy user message
 

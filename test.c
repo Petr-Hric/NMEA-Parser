@@ -26,7 +26,7 @@ int main() {
         char* test_str;
         nmea_message_to_string(message, &test_str);
 
-        printf("%s\n", test_str);
+        printf("%s - %zu\n", test_str, message->value_count);
 
         nmea_destroy_message_string(&test_str);
 
